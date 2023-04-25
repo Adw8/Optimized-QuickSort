@@ -103,7 +103,7 @@ def partition(array, low, high):
 # Driver code
 arr = getArray('OnlineNewsPopularity.csv', 30)
 unsorted = [i for i in arr]
-n = len(arr)
+n = len(arr) -1 
 partition_count = 0
 comparison_count = 0
 start_time = time.time()
@@ -123,4 +123,4 @@ with open('output.txt', 'a') as file:
         file.write('Number of partitions: {}\n'.format(partition_count))
         file.write('Number of comparisons: {}\n'.format(comparison_count))
         file.write('Execution Time: {}\n'.format(end_time - start_time))
-# This code is contributed by Adnan Aliakbar
+
